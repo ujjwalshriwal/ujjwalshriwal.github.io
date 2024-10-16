@@ -3,26 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujjwal Portfolio</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            background-color: #111;
-            color: chartreuse;
-            height: 100vh;
-        }
-    </style>
+    <title>Nischay</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hey you'r late, I have already registered this username</h1>
-    <h4>(try another one)</h4>
+
+
+    <div class="cursor-container">
+            <div class="cursor-inner" data-cursor-inner></div>
+            <div class="cursor-outer" data-cursor-outer></div>
+        </div>
+
+    <div class="loader">
+            <h1 class="counter">0</h1>
+            <div class="overlay">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    
+    <div id="main">
+        
+        <div id="home">
+            <div id="hm-part1">
+                <div id="hmp1-section1">
+                    <div id="main-logo">
+                        <h4 id="logoText"><span>W</span></h4>
+                    </div>
+                    <p class="text-reveal-type1">This Portfolio by </p>
+                </div>
+                <div id="hmp1-section2">
+                    <a href="#home">PORTFOLIO</a >
+                </div>
+                <div id="hmp1-section3">
+                    <a href="#" onclick="scrollToAbout()">ABOUT</a >
+                </div>
+                <div id="hmp1-section4">
+                    <a href="#" onclick="scrollToWorks()">WORKS</a >
+                </div>
+            </div>
+            <div id="hm-part2">
+                <div id="hmp2-section1">
+                    <h2 class="text-reveal-type2">Nischay</h2>
+                </div>
+                <div id="hmp2-section2">
+                    
+                </div>
+                <div id="hmp2-section3"></div>
+            </div>
+            <div id="hm-part3">
+                <div id="hmp3-section1">
+                    <h4 class="text-reveal-type3 h4-type1">Fr<span>𐩥</span>ntend</h4>
+                    <h4 class="rotation h4-type2">✣</h4>
+                    <h4 class="text-reveal-type3 h4-type3">Devel<span>𐩥</span>per</h4>
+                </div>
+                <div id="hmp3-section2">
+                    
+                </div>
+                <div id="hmp3-section3">
+                    <h3 id="current-time"></h3>
+                </div>   
+            </div>
+            <div id="hm-part4">
+                <div id="hmp4-section1"></div>
+                <div id="hmp4-section2"></div>
+                <div id="hmp4-section3"></div>
+                <div id="hmp4-section4"></div>
+            </div>
+        </div>
+
+        <div id="about-page">
+
+            <div id="ab-part1">
+                <h4>ABOUT 𐩯</h4>
+            </div>
+            <div id="ab-part2">
+                <div id="abp2-left">
+                    <p>Hey There! I am Nischay Dilhor, An aerospace grad turned to self-taught <span class="sp1">Frontend Developer</span>. Learning and Building things day by day to constantly <span class="">improve</span> my self. I am poised to contribute effectively to the ever-changing landscape of web development. <br> <br> Let's turn <span class="sp2">ideas</span> into awesome digital <span class="sp3">experiences!</span> </p>
+                </div>
+                <div id="abp2-right">
+                    <div id="abp2r-top">
+                        <li><h3>HTML5 -</h3> 
+                        <h3>CSS3 -</h3> 
+                        <h3>JavaScript -</h3> 
+                        <h3>React Js -</h3> 
+                        <h3>Tailwind -</h3></li>
+                    </div>
+                    <div id="abp2r-bottom">
+                        <h4>ST∀TS</h4>
+                        <svg class="rotatesvg" width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f2d3d3" stroke-width="1" style="stroke-width: 2px;">
+                        <path d="M50.2586 1H49.7452V99H50.2586V1Z"></path>
+                        <path d="M74.7236 7.69409L74.2793 7.4364L25.2803 92.3078L25.7226 92.5636L74.7236 7.69409Z"></path>
+                        <path d="M62.9315 2.73648L62.4353 2.60187L37.0704 97.2635L37.5666 97.3981L62.9315 2.73648Z"></path>
+                        <path d="M84.831 15.5325L84.4676 15.171L15.1708 84.4677L15.5362 84.8311L84.831 15.5325Z"></path>
+                        <path d="M92.5655 25.7226L92.3097 25.2765L7.43829 74.2774L7.69598 74.7217L92.5655 25.7226Z"></path>
+                        <path d="M97.3981 37.5666L97.2635 37.0705L2.60382 62.4354L2.73651 62.9296L97.3981 37.5666Z"></path>
+                        <path d="M99 50.2567V49.7433H1V50.2567H99Z"></path>
+                        <path d="M97.2654 62.9295L97.4 62.4334L2.73843 37.0685L2.60382 37.5646L97.2654 62.9295Z"></path>
+                        <path d="M84.4695 84.8292L84.8329 84.4677L15.5343 15.171L15.1708 15.5344L84.4695 84.8292Z"></path>
+                       <path d="M92.3097 74.7236L92.5655 74.2774L7.69598 25.2784L7.43829 25.7207L92.3097 74.7236Z"></path>
+                        <path d="M74.2793 92.5636L74.7255 92.3059L25.7264 7.4364L25.2803 7.69217L74.2793 92.5636Z"></path>
+                        <path d="M62.4373 97.3962L62.9315 97.2616L37.5666 2.60382L37.0724 2.73843L62.4373 97.3962Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div id="ab-part3">
+            </div>
+            
+        </div>
+
+        <div id="works-page">
+            <div id="sections-wrapper">
+                
+                <a href="#" class="element" data-width="500px" data-height="250px"><h2>Youtube</h2> </a>       
+                
+                <a href="https://lazarev-clone-nischay42.netlify.app/" class="element"  data-width="450px" data-height="250px"> <h2>Lazarev Clone</h2> </a>
+
+                <a href="#" class="element" data-width="430px" data-height="250px"> <h2>Swiggy</h2> </a>
+                           
+                <a href="#" class="element" data-width="500px" data-height="250px"> <h2>Sundown Studio Replica</h2> </a>
+                 
+                <a href="#" class="element" data-width="470px" data-height="250px"> <h2>Ochi Website Clone</h2> </a>
+                 
+                <!-- <div id="image"></div>  -->
+                <video id="video" src=""></video>
+
+            </div>
+
+            <div id="works-heading">
+                <h2>W<span>Ø</span>RKS</h2>
+            </div> 
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="script.js"></script>
 </body>
 </html>
